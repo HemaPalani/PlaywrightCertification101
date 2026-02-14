@@ -1,0 +1,25 @@
+{
+  "name": "playwright-lambdatest-certification",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for LambdaTest certification assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:simple": "npx playwright test tests/simpleFormDemo.spec.js",
+    "test:slider": "npx playwright test tests/dragDropSliders.spec.js",
+    "test:form": "npx playwright test tests/inputFormSubmit.spec.js",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "lambdatest"
+  ],
+  "author": "Hema",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3"
+  }
+}
