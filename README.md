@@ -17,18 +17,23 @@ npm install          # Install dependencies
 npm run test         # Run all tests on LambdaTest
 npm run test:local   # Run all tests locally
 
+# To rum individual test parallely in different browser
+npm playwright test tests/{testName}
+
+
 # Setup
 Install dependencies:
 npm install
 
 # Configure LambdaTest credentials:
-Use the .env.dist template file by renaming it to .env and adding your credentials:
+Use the .env and adding your credentials:
 LTC_USERNAME=your_lambdatest_username
 LTC_ACCESS_KEY=your_lambdatest_access_key
 
-# How to Run Tests
-Run tests on LambdaTest: npm run test
-Run tests locally: npm run test:local
+# set Lambda test credentials in cmd using below commands
+npm install dotenv
+set LT_USERNAME=your name && set LT_ACCESS_KEY=accessKey
+
 
 # Github Actions
 It includes a "ci-cd-pipeline.yml" file for github actions workflow
