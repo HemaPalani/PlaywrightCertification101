@@ -1,5 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-
+require('dotenv').config();
 /** Set LT_USERNAME, LT_ACCESS_KEY in command prompt using 
  * set LT_USERNAME="YOUR_LAMBDATEST_USERNAME"
  * set LT_ACCESS_KEY="YOUR_LAMBDATEST_ACCESS_KEY" 

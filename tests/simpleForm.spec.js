@@ -10,11 +10,12 @@ test("TC-01 - Simple Form Demo displays correct message", async ({ page }) => {
   await expect(page).toHaveURL(/.*simple-form-demo/);
 
   const message = "Welcome to LambdaTest";
-
-  await page.getByRole('textbox', { name: 'Please enter your Message' }).fill(message);
+  
+  await page.locator('input[placeholder="Please enter your Message"]').fill(message);
 
   // Using different locator strategies
- // await page.locator('id=user-message').fill(message);
+  //await page.locator('id=user-message').fill(message);
+ // await page.locator('input[placeholder="Please enter your Message"]').fill(message);
 
   await page.getByRole('button', { name: 'Get Checked Value' }).click();
 
